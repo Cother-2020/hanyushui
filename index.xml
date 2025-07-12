@@ -6,8 +6,15 @@
     <description>Recent content on 寒于水的博客</description>
     <generator>Hugo -- 0.148.1</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 12 Jul 2025 19:08:31 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 13 Jul 2025 01:04:07 +0800</lastBuildDate>
     <atom:link href="https://blog.hanyushui.top/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Test</title>
+      <link>https://blog.hanyushui.top/posts/test/</link>
+      <pubDate>Sun, 13 Jul 2025 01:04:07 +0800</pubDate>
+      <guid>https://blog.hanyushui.top/posts/test/</guid>
+      <description>&lt;p&gt;这里是正文内容开始的地方，可以开始写你的文章啦 ✍️&lt;/p&gt;</description>
+    </item>
     <item>
       <title>WSL 安装 Hugo 的实践</title>
       <link>https://blog.hanyushui.top/posts/setup_hugo_on_wsl/</link>

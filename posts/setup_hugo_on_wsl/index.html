@@ -436,10 +436,9 @@ sudo apt install -y git curl wget build-essential
 </ul>
 
   </footer>
-<link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
-<script src="https://unpkg.com/@waline/client@v3/dist/waline.js"></script>
-
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@waline/client@v2/dist/waline.css" />
 <div id="waline"></div>
+<script src="https://cdn.jsdelivr.net/npm/@waline/client@v2/dist/waline.min.js"></script>
 <script>
   Waline.init({
     el: '#waline',
@@ -447,9 +446,9 @@ sudo apt install -y git curl wget build-essential
     lang: 'zh-CN',
     emoji: "[\"https://unpkg.com/@waline/emojis@1.1.0/weibo\"]",
     requiredMeta: ['nick', 'mail'],
-    comment: true
   });
 </script>
+
 </article>
     </main>
     
