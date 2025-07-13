@@ -6,8 +6,30 @@
     <description>Recent content on 寒于水的博客</description>
     <generator>Hugo -- 0.148.1</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 13 Jul 2025 20:14:29 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 13 Jul 2025 20:43:44 +0800</lastBuildDate>
     <atom:link href="https://blog.hanyushui.top/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>差生文具多，与不同频的我们</title>
+      <link>https://blog.hanyushui.top/essays/2025_07_13/</link>
+      <pubDate>Sun, 13 Jul 2025 20:43:44 +0800</pubDate>
+      <guid>https://blog.hanyushui.top/essays/2025_07_13/</guid>
+      <description>&lt;p&gt;这个周末，我终于完成了一件搁置已久的心事：我的个人博客上线了。&lt;/p&gt;
+&lt;p&gt;这个想法萌生于四年前初学JAVA Web之时。一晃眼，JAVA早已生疏，这个网站也终究没能如当初设想那般，由我亲手从零构建。回望过去，我总在不断地“折腾”：学过JAVA Web，搞过公众号，发过头条，也了解过WordPress。甚至用AI通宵写歌、写项目。这些浅尝辄止的经历，恰好印证了我“三分钟热度”的习性，也让我对自己的状态有了更清晰的认识——“差生文具多”。打球的装备很专业，玩游戏的电脑是顶配，可我偏偏缺少最核心的东西。&lt;/p&gt;
+&lt;p&gt;因此，对无法亲手从零到一的失落，与最终建成这个静态博客的喜悦，在我心中交织。我意识到，过去真正的阻碍并非技术，而是我从未想好要成为一个“内容创作者”。&lt;/p&gt;
+&lt;p&gt;我开始反思，过往的尝试为何总是半途而废？根源或许在于“急功近利，出发点皆是名利”。不做时嗤之以鼻，一旦投身其中，却难掩心中的贪婪。这大概就是屡屡失败的根因。&lt;/p&gt;
+&lt;p&gt;近五年的职场生涯，让我“班味”渐浓。我变得极度关注结果，而忽略过程。这种思维模式，就像一个密闭的容器：只要内部的原子弹爆炸不影响外界，就等于无事发生。这种“结果论”的思维，不知不觉间也侵蚀了我的生活。&lt;/p&gt;
+&lt;p&gt;当女友分享她一天的学习点滴时，我却说：“我不在乎这些过程，我只关心你最终的结果。”这句话的背景，是她正在为找工作而努力。她的回应让我至今难忘：“你要多鼓励我，这就是为什么我不喜欢跟你说这些的原因。”&lt;/p&gt;
+&lt;p&gt;后来，当我兴奋地向她展示我引以为傲的博客时，她出乎意料地“冷嘲热讽”起来。我瞬间明白，这是对我之前那番话最直接的回应。那一刻我才恍然，我强加于人的期待，最终以同样的方式回到了自己身上。原来，自己珍视的，未必是别人在意的。&lt;/p&gt;
+&lt;p&gt;这件事，让我不得不重新思考：两个人在一起的意义究竟是什么？&lt;/p&gt;
+&lt;p&gt;我曾固执地希望伴侣是“战友”，能与我一同学习、进步。我们甚至因此争吵、分手。如今的我终于明白，没有人有义务为他人的焦虑买单，唯一能要求的，只有自己。或许正因我深知自己最大的症结在于缺乏恒心，才格外需要“冷嘲热讽”作为鞭策，而非安逸的夸赞。&lt;/p&gt;
+&lt;p&gt;于是，我不再强求她的成长，转而向内求索。我选择做好自己，相信行动是最好的言语。&lt;/p&gt;
+&lt;p&gt;当她终于有了学习的自觉时，我却已走过了那个热衷于劝学的阶段。我们像是走在不同频率的轨道上，各自独立，享受着自由，也品尝着孤独。要解决这个问题，真正的同步，或许并非强求一致，而是走的快的人愿意放慢脚步等等，走得慢的人也努力加快步伐，最终在途中相遇。&lt;/p&gt;
+&lt;div style=&#34;text-align: right;&#34;&gt;
+2025.07.13
+上海 唐镇
+&lt;/div&gt;
+&lt;p&gt;&lt;em&gt;（本文初稿由作者完成，由Gemini 2.5 Pro AI 协助进行了语言润色）&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Windows 下使用 SSH 密钥连接 Linux 服务器</title>
       <link>https://blog.hanyushui.top/posts/windows_ssh_config/</link>
