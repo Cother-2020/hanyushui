@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://blog.hanyushui.top/</loc>
+    <lastmod>2025-07-13T20:43:44+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.hanyushui.top/essays/</loc>
+    <lastmod>2025-07-13T20:43:44+08:00</lastmod>
+  </url><url>
     <loc>https://blog.hanyushui.top/categories/</loc>
     <lastmod>2025-07-13T20:14:29+08:00</lastmod>
   </url><url>
@@ -21,9 +27,6 @@
     <lastmod>2025-07-13T20:14:29+08:00</lastmod>
   </url><url>
     <loc>https://blog.hanyushui.top/posts/windows_ssh_config/</loc>
-    <lastmod>2025-07-13T20:14:29+08:00</lastmod>
-  </url><url>
-    <loc>https://blog.hanyushui.top/</loc>
     <lastmod>2025-07-13T20:14:29+08:00</lastmod>
   </url><url>
     <loc>https://blog.hanyushui.top/posts/</loc>
