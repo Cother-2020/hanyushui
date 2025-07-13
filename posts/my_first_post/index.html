@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
 <title>Hugo 搭建个人博客实践 | 寒于水的博客</title>
-<meta name="keywords" content="">
+<meta name="keywords" content="Hugo, PaperMod, Guide">
 <meta name="description" content="使用 Hugo 搭建个人博客并建立 Git 仓库的全过程
 
 本文详细记录了我如何从零开始搭建个人博客，并将项目托管到 GitHub 私有仓库的完整流程，适合作为 Hugo 初学者参考。
@@ -131,6 +131,9 @@ hugo version 2. 创建 Hugo 项目 hugo new site cother-blog cd cother-blog 目�
     <meta property="article:section" content="posts">
     <meta property="article:published_time" content="2025-07-12T14:56:35+08:00">
     <meta property="article:modified_time" content="2025-07-12T14:56:35+08:00">
+    <meta property="article:tag" content="Hugo">
+    <meta property="article:tag" content="PaperMod">
+    <meta property="article:tag" content="Guide">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hugo 搭建个人博客实践">
 <meta name="twitter:description" content="使用 Hugo 搭建个人博客并建立 Git 仓库的全过程
@@ -226,7 +229,7 @@ cd cother-blog
   "name": "Hugo 搭建个人博客实践",
   "description": "使用 Hugo 搭建个人博客并建立 Git 仓库的全过程 本文详细记录了我如何从零开始搭建个人博客，并将项目托管到 GitHub 私有仓库的完整流程，适合作为 Hugo 初学者参考。\n📌 一、项目目标与技术选型 1. 项目目标 我希望创建一个以“写作为核心”的个人博客，能够：\n快速书写与发布 Markdown 博客 界面美观简洁 内容结构清晰 自主掌控，无需依赖第三方平台 2. 技术选型 项目 选择 理由 博客生成器 Hugo 快速、灵活、静态生成，Go语言编写，效率高 博客主题 PaperMod 极简风格、美观、支持目录、搜索与代码高亮 文档格式 Markdown + TOML 易读易写，便于版本管理 版本控制 Git + GitHub 记录变更、远程备份，后续可自动部署 仓库权限 私有 初期仅用于个人记录与测试 🛠️ 二、本地环境准备 1. 安装 Hugo macOS 用户可使用 Homebrew 安装：\nbrew install hugo Windows 或 Linux 用户可访问官方页面： 👉 https://gohugo.io/getting-started/installing/\n安装后检查版本：\nhugo version 2. 创建 Hugo 项目 hugo new site cother-blog cd cother-blog 目录结构说明（部分）：\n",
   "keywords": [
-    
+    "Hugo", "PaperMod", "Guide"
   ],
   "articleBody": "使用 Hugo 搭建个人博客并建立 Git 仓库的全过程 本文详细记录了我如何从零开始搭建个人博客，并将项目托管到 GitHub 私有仓库的完整流程，适合作为 Hugo 初学者参考。\n📌 一、项目目标与技术选型 1. 项目目标 我希望创建一个以“写作为核心”的个人博客，能够：\n快速书写与发布 Markdown 博客 界面美观简洁 内容结构清晰 自主掌控，无需依赖第三方平台 2. 技术选型 项目 选择 理由 博客生成器 Hugo 快速、灵活、静态生成，Go语言编写，效率高 博客主题 PaperMod 极简风格、美观、支持目录、搜索与代码高亮 文档格式 Markdown + TOML 易读易写，便于版本管理 版本控制 Git + GitHub 记录变更、远程备份，后续可自动部署 仓库权限 私有 初期仅用于个人记录与测试 🛠️ 二、本地环境准备 1. 安装 Hugo macOS 用户可使用 Homebrew 安装：\nbrew install hugo Windows 或 Linux 用户可访问官方页面： 👉 https://gohugo.io/getting-started/installing/\n安装后检查版本：\nhugo version 2. 创建 Hugo 项目 hugo new site cother-blog cd cother-blog 目录结构说明（部分）：\ncother-blog/ ├── config.toml # 配置文件 ├── content/ # 博客文章 ├── themes/ # 博客主题 └── static/ # 静态资源 🎨 三、配置主题 PaperMod 1. 添加主题为子模块 git init git submodule add https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod 2. 修改配置文件 config.toml baseURL = \"https://example.com/\" languageCode = \"zh-cn\" title = \"Cother的博客\" theme = \"PaperMod\" [params] ShowReadingTime = true ShowToc = true TocOpen = true 更多参数可参考：https://github.com/adityatelange/hugo-PaperMod/wiki/Variables\n✍️ 四、撰写第一篇博客文章 1. 创建文章 hugo new posts/my-first-blog.md 编辑文件 content/posts/my-first-blog.md：\n+++ title = \"我的第一篇博客\" date = 2025-07-12 tags = [\"博客搭建\", \"Hugo\", \"Git\"] +++ 这是我用 Hugo 写的第一篇博客，用于记录我的博客项目搭建过程。 2. 本地预览 hugo server 浏览器访问 http://localhost:1313，即可查看文章效果。\n🗃️ 五、建立 Git 仓库并推送到 GitHub 1. 初始化 Git 仓库 git init git add . git commit -m \"Initial commit\" 2. 创建 GitHub 私有仓库 打开 https://github.com，新建一个名为 cother-blog 的私有仓库 复制仓库的 SSH 地址（例如：git@github.com:YourUsername/cother-blog.git） 3. 添加远程仓库并推送 git remote add origin git@github.com:YourUsername/cother-blog.git git branch -M main git push -u origin main 如果你第一次使用 SSH 推送，需要先设置 SSH Key：\nssh-keygen -t rsa -C \"your_email@example.com\" cat ~/.ssh/id_rsa.pub 然后将公钥添加到 GitHub 账户 → Settings → SSH and GPG keys\n✅ 六、总结与后续计划 ✅ 当前成果 使用 Hugo 成功搭建博客项目框架 使用 PaperMod 主题实现简洁的页面风格 写下了第一篇博客文章 建立了 Git 本地仓库，并推送至 GitHub 私有仓库 📌 下一步计划 添加更多文章内容 优化博客导航与标签页 添加部署脚本，实现自动部署（GitHub Actions + Netlify） 打造属于自己的个性化技术博客站点 📎 参考链接 Hugo 官网：https://gohugo.io/ PaperMod 主题：https://github.com/adityatelange/hugo-PaperMod Markdown 教程：https://markdown.com.cn/ GitHub 使用指南：https://docs.github.com/ 感谢你阅读我的第一篇技术文章，如果你也想搭建自己的博客，希望这篇记录能帮到你！\n",
   "wordCount" : "267",
@@ -547,12 +550,15 @@ cd cother-blog
 
   <footer class="post-footer">
     <ul class="post-tags">
+      <li><a href="https://blog.hanyushui.top/tags/hugo/">Hugo</a></li>
+      <li><a href="https://blog.hanyushui.top/tags/papermod/">PaperMod</a></li>
+      <li><a href="https://blog.hanyushui.top/tags/guide/">Guide</a></li>
     </ul>
 
 <ul class="share-buttons">
     <li>
         <a target="_blank" rel="noopener noreferrer" aria-label="share Hugo 搭建个人博客实践 on x"
-            href="https://x.com/intent/tweet/?text=Hugo%20%e6%90%ad%e5%bb%ba%e4%b8%aa%e4%ba%ba%e5%8d%9a%e5%ae%a2%e5%ae%9e%e8%b7%b5&amp;url=https%3a%2f%2fblog.hanyushui.top%2fposts%2fmy_first_post%2f&amp;hashtags=">
+            href="https://x.com/intent/tweet/?text=Hugo%20%e6%90%ad%e5%bb%ba%e4%b8%aa%e4%ba%ba%e5%8d%9a%e5%ae%a2%e5%ae%9e%e8%b7%b5&amp;url=https%3a%2f%2fblog.hanyushui.top%2fposts%2fmy_first_post%2f&amp;hashtags=Hugo%2cPaperMod%2cGuide">
             <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
                 <path
                     d="M512 62.554 L 512 449.446 C 512 483.97 483.97 512 449.446 512 L 62.554 512 C 28.03 512 0 483.97 0 449.446 L 0 62.554 C 0 28.03 28.029 0 62.554 0 L 449.446 0 C 483.971 0 512 28.03 512 62.554 Z M 269.951 190.75 L 182.567 75.216 L 56 75.216 L 207.216 272.95 L 63.9 436.783 L 125.266 436.783 L 235.9 310.383 L 332.567 436.783 L 456 436.783 L 298.367 228.367 L 432.367 75.216 L 371.033 75.216 Z M 127.633 110 L 164.101 110 L 383.481 400.065 L 349.5 400.065 Z" />

@@ -1,46 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Hugo on 寒于水的博客</title>
-    <link>https://blog.hanyushui.top/tags/hugo/</link>
-    <description>Recent content in Hugo on 寒于水的博客</description>
+    <title>PaperMod on 寒于水的博客</title>
+    <link>https://blog.hanyushui.top/tags/papermod/</link>
+    <description>Recent content in PaperMod on 寒于水的博客</description>
     <generator>Hugo -- 0.148.1</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 12 Jul 2025 19:08:31 +0800</lastBuildDate>
-    <atom:link href="https://blog.hanyushui.top/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>WSL 安装 Hugo 的实践</title>
-      <link>https://blog.hanyushui.top/posts/setup_hugo_on_wsl/</link>
-      <pubDate>Sat, 12 Jul 2025 19:08:31 +0800</pubDate>
-      <guid>https://blog.hanyushui.top/posts/setup_hugo_on_wsl/</guid>
-      <description>&lt;p&gt;在这篇文章中，我将记录如何在 Windows 下通过 WSL2（以 Ubuntu 22.04 为例）安装 Hugo，并配置本地博客开发环境。这个过程非常适合希望在 Windows 中享受类原生 Linux 开发体验的用户。&lt;/p&gt;
-&lt;h2 id=&#34;一为什么选择-wsl-而不是虚拟机&#34;&gt;一、为什么选择 WSL 而不是虚拟机？&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;启动速度快&lt;/li&gt;
-&lt;li&gt;资源占用小&lt;/li&gt;
-&lt;li&gt;与 Windows 系统集成度高&lt;/li&gt;
-&lt;li&gt;命令行开发体验接近原生 Linux&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;二环境准备&#34;&gt;二、环境准备&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;操作系统：Windows 11&lt;/li&gt;
-&lt;li&gt;WSL2&lt;/li&gt;
-&lt;li&gt;Ubuntu 22.04 LTS&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;开启-wsl-功能powershell-管理员执行&#34;&gt;开启 WSL 功能（PowerShell 管理员执行）&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;wsl --install
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;如果你已安装 WSL，但未安装 Ubuntu 22.04，可手动指定：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;wsl --install -d Ubuntu-&lt;span style=&#34;color:#ae81ff&#34;&gt;22.04&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
-&lt;h2 id=&#34;三安装-hugo-前的准备&#34;&gt;三、安装 Hugo 前的准备&lt;/h2&gt;
-&lt;p&gt;更新系统并安装基本依赖：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt update &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo apt upgrade -y
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt install -y git curl wget build-essential
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
-&lt;h2 id=&#34;四安装-gohugo-需要&#34;&gt;四、安装 Go（Hugo 需要）&lt;/h2&gt;
-&lt;p&gt;不要使用 apt 安装 Go（版本旧），建议从官网下载安装最新版：go1.22.4.linux-amd64.tar.gz&lt;/p&gt;</description>
-    </item>
+    <lastBuildDate>Sat, 12 Jul 2025 14:56:35 +0800</lastBuildDate>
+    <atom:link href="https://blog.hanyushui.top/tags/papermod/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo 搭建个人博客实践</title>
       <link>https://blog.hanyushui.top/posts/my_first_post/</link>

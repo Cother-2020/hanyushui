@@ -140,6 +140,29 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">Windows 下使用 SSH 密钥连接 Linux 服务器
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Windows 下使用 SSH 密钥连接 Linux 服务器步骤 步骤 1：生成 SSH 密钥对 打开 PowerShell。
+输入以下命令生成 RSA 类型的 SSH 密钥对：
+ssh-keygen -t rsa -b 4096 -C &#34;your_email@example.com&#34; 按提示操作，默认保存路径为 C:\Users\&lt;你的用户名&gt;\.ssh\id_rsa。
+可选择设置密码短语，增加安全性；也可以直接回车跳过。
+步骤 2：复制公钥内容 在 PowerShell 中输入以下命令查看并复制公钥内容：
+Get-Content $env:USERPROFILE\.ssh\id_rsa.pub 复制输出的整行内容（以 ssh-rsa 开头）。
+步骤 3：将公钥添加到服务器 方法一：使用密码登录服务器并添加公钥 使用密码登录服务器：
+ssh your_username@server_ip 在服务器上执行以下命令：
+mkdir -p ~/.ssh echo &#34;粘贴你的公钥内容&#34; &gt;&gt; ~/.ssh/authorized_keys chmod 700 ~/.ssh chmod 600 ~/.ssh/authorized_keys 方法二：使用 scp 命令上传公钥文件 在本地将公钥文件上传到服务器：
+scp $env:USERPROFILE\.ssh\id_rsa.pub your_username@server_ip:~/ 登录服务器并执行以下命令：
+mkdir -p ~/.ssh cat ~/id_rsa.pub &gt;&gt; ~/.ssh/authorized_keys chmod 700 ~/.ssh chmod 600 ~/.ssh/authorized_keys rm ~/id_rsa.pub 步骤 4：使用 SSH 密钥连接服务器 在 PowerShell 中使用以下命令连接服务器：
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-07-13 20:14:29 +0800 CST'>July 13, 2025</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;寒于水</footer>
+  <a class="entry-link" aria-label="post link to Windows 下使用 SSH 密钥连接 Linux 服务器" href="https://blog.hanyushui.top/posts/windows_ssh_config/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">WSL 安装 Hugo 的实践
     </h2>
   </header>

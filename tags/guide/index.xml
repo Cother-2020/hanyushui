@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>寒于水的博客</title>
-    <link>https://blog.hanyushui.top/</link>
-    <description>Recent content on 寒于水的博客</description>
+    <title>Guide on 寒于水的博客</title>
+    <link>https://blog.hanyushui.top/tags/guide/</link>
+    <description>Recent content in Guide on 寒于水的博客</description>
     <generator>Hugo -- 0.148.1</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sun, 13 Jul 2025 20:14:29 +0800</lastBuildDate>
-    <atom:link href="https://blog.hanyushui.top/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.hanyushui.top/tags/guide/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Windows 下使用 SSH 密钥连接 Linux 服务器</title>
       <link>https://blog.hanyushui.top/posts/windows_ssh_config/</link>
@@ -74,39 +74,6 @@
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;在 PowerShell 中使用以下命令连接服务器：&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>WSL 安装 Hugo 的实践</title>
-      <link>https://blog.hanyushui.top/posts/setup_hugo_on_wsl/</link>
-      <pubDate>Sat, 12 Jul 2025 19:08:31 +0800</pubDate>
-      <guid>https://blog.hanyushui.top/posts/setup_hugo_on_wsl/</guid>
-      <description>&lt;p&gt;在这篇文章中，我将记录如何在 Windows 下通过 WSL2（以 Ubuntu 22.04 为例）安装 Hugo，并配置本地博客开发环境。这个过程非常适合希望在 Windows 中享受类原生 Linux 开发体验的用户。&lt;/p&gt;
-&lt;h2 id=&#34;一为什么选择-wsl-而不是虚拟机&#34;&gt;一、为什么选择 WSL 而不是虚拟机？&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;启动速度快&lt;/li&gt;
-&lt;li&gt;资源占用小&lt;/li&gt;
-&lt;li&gt;与 Windows 系统集成度高&lt;/li&gt;
-&lt;li&gt;命令行开发体验接近原生 Linux&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;二环境准备&#34;&gt;二、环境准备&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;操作系统：Windows 11&lt;/li&gt;
-&lt;li&gt;WSL2&lt;/li&gt;
-&lt;li&gt;Ubuntu 22.04 LTS&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;开启-wsl-功能powershell-管理员执行&#34;&gt;开启 WSL 功能（PowerShell 管理员执行）&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;wsl --install
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;如果你已安装 WSL，但未安装 Ubuntu 22.04，可手动指定：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;wsl --install -d Ubuntu-&lt;span style=&#34;color:#ae81ff&#34;&gt;22.04&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
-&lt;h2 id=&#34;三安装-hugo-前的准备&#34;&gt;三、安装 Hugo 前的准备&lt;/h2&gt;
-&lt;p&gt;更新系统并安装基本依赖：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt update &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo apt upgrade -y
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt install -y git curl wget build-essential
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
-&lt;h2 id=&#34;四安装-gohugo-需要&#34;&gt;四、安装 Go（Hugo 需要）&lt;/h2&gt;
-&lt;p&gt;不要使用 apt 安装 Go（版本旧），建议从官网下载安装最新版：go1.22.4.linux-amd64.tar.gz&lt;/p&gt;</description>
     </item>
     <item>
       <title>Hugo 搭建个人博客实践</title>
@@ -176,32 +143,6 @@
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo new site cother-blog
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cd cother-blog
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;目录结构说明（部分）：&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>关于</title>
-      <link>https://blog.hanyushui.top/about/</link>
-      <pubDate>Sat, 12 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>https://blog.hanyushui.top/about/</guid>
-      <description>&lt;h2 id=&#34;-你好我是寒于水&#34;&gt;👋 你好，我是寒于水&lt;/h2&gt;
-&lt;p&gt;一位想学点技术、写点东西的普通人。&lt;br&gt;
-不是技术大牛，但希望从写写记记中一点点进步、积累、沉淀。&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;-关于这个博客&#34;&gt;📘 关于这个博客&lt;/h2&gt;
-&lt;p&gt;这个博客记录我生活与思考中的点滴，包括：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;💻 各种技术学习与踩坑经历&lt;/li&gt;
-&lt;li&gt;🧠 知识笔记与总结归纳&lt;/li&gt;
-&lt;li&gt;✍️ 日常的思考、随笔、小记&lt;/li&gt;
-&lt;li&gt;💬 写给未来的某些话&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;期待你在这里发现共鸣，也欢迎留言交流。&lt;/p&gt;&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;-寄语&#34;&gt;🌱 寄语&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;愿这个安静的角落，&lt;br&gt;
-能成为我沉淀思考的地方，&lt;br&gt;
-也是记录成长的地方。&lt;/p&gt;&lt;/blockquote&gt;</description>
     </item>
   </channel>
 </rss>
