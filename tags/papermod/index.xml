@@ -1,81 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>PaperMod on 寒于水的博客</title>
-    <link>https://blog.hanyushui.top/tags/papermod/</link>
-    <description>Recent content in PaperMod on 寒于水的博客</description>
-    <generator>Hugo -- 0.149.0</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Sat, 12 Jul 2025 14:56:35 +0800</lastBuildDate>
-    <atom:link href="https://blog.hanyushui.top/tags/papermod/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Hugo 搭建个人博客实践</title>
-      <link>https://blog.hanyushui.top/posts/my_first_post/</link>
-      <pubDate>Sat, 12 Jul 2025 14:56:35 +0800</pubDate>
-      <guid>https://blog.hanyushui.top/posts/my_first_post/</guid>
-      <description>&lt;h1 id=&#34;使用-hugo-搭建个人博客并建立-git-仓库的全过程&#34;&gt;使用 Hugo 搭建个人博客并建立 Git 仓库的全过程&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>PaperMod on 寒于水的博客</title><link>https://blog.hanyushui.top/tags/papermod/</link><description>Recent content in PaperMod on 寒于水的博客</description><generator>Hugo -- 0.152.2</generator><language>zh-cn</language><lastBuildDate>Sat, 12 Jul 2025 14:56:35 +0800</lastBuildDate><atom:link href="https://blog.hanyushui.top/tags/papermod/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo 搭建个人博客实践</title><link>https://blog.hanyushui.top/posts/my_first_post/</link><pubDate>Sat, 12 Jul 2025 14:56:35 +0800</pubDate><guid>https://blog.hanyushui.top/posts/my_first_post/</guid><description>&lt;h1 id="使用-hugo-搭建个人博客并建立-git-仓库的全过程"&gt;使用 Hugo 搭建个人博客并建立 Git 仓库的全过程&lt;/h1&gt;
 &lt;blockquote&gt;
-&lt;p&gt;本文详细记录了我如何从零开始搭建个人博客，并将项目托管到 GitHub 私有仓库的完整流程，适合作为 Hugo 初学者参考。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;本文详细记录了我如何从零开始搭建个人博客，并将项目托管到 GitHub 私有仓库的完整流程，适合作为 Hugo 初学者参考。&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;-一项目目标与技术选型&#34;&gt;📌 一、项目目标与技术选型&lt;/h2&gt;
-&lt;h3 id=&#34;1-项目目标&#34;&gt;1. 项目目标&lt;/h3&gt;
-&lt;p&gt;我希望创建一个以“写作为核心”的个人博客，能够：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;快速书写与发布 Markdown 博客&lt;/li&gt;
-&lt;li&gt;界面美观简洁&lt;/li&gt;
-&lt;li&gt;内容结构清晰&lt;/li&gt;
-&lt;li&gt;自主掌控，无需依赖第三方平台&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;2-技术选型&#34;&gt;2. 技术选型&lt;/h3&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;项目&lt;/th&gt;
-          &lt;th&gt;选择&lt;/th&gt;
-          &lt;th&gt;理由&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;博客生成器&lt;/td&gt;
-          &lt;td&gt;Hugo&lt;/td&gt;
-          &lt;td&gt;快速、灵活、静态生成，Go语言编写，效率高&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;博客主题&lt;/td&gt;
-          &lt;td&gt;PaperMod&lt;/td&gt;
-          &lt;td&gt;极简风格、美观、支持目录、搜索与代码高亮&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;文档格式&lt;/td&gt;
-          &lt;td&gt;Markdown + TOML&lt;/td&gt;
-          &lt;td&gt;易读易写，便于版本管理&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;版本控制&lt;/td&gt;
-          &lt;td&gt;Git + GitHub&lt;/td&gt;
-          &lt;td&gt;记录变更、远程备份，后续可自动部署&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;仓库权限&lt;/td&gt;
-          &lt;td&gt;私有&lt;/td&gt;
-          &lt;td&gt;初期仅用于个人记录与测试&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;-二本地环境准备&#34;&gt;🛠️ 二、本地环境准备&lt;/h2&gt;
-&lt;h3 id=&#34;1-安装-hugo&#34;&gt;1. 安装 Hugo&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;macOS&lt;/strong&gt; 用户可使用 Homebrew 安装：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;brew install hugo
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Windows&lt;/strong&gt; 或 &lt;strong&gt;Linux&lt;/strong&gt; 用户可访问官方页面：
-👉 &lt;a href=&#34;https://gohugo.io/getting-started/installing/&#34;&gt;https://gohugo.io/getting-started/installing/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;安装后检查版本：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo version
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;2-创建-hugo-项目&#34;&gt;2. 创建 Hugo 项目&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo new site cother-blog
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cd cother-blog
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;目录结构说明（部分）：&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+&lt;h2 id="-一项目目标与技术选型"&gt;📌 一、项目目标与技术选型&lt;/h2&gt;
+&lt;h3 id="1-项目目标"&gt;1. 项目目标&lt;/h3&gt;
+&lt;p&gt;我希望创建一个以“写作为核心”的个人博客，能够：&lt;/p&gt;</description></item></channel></rss>
